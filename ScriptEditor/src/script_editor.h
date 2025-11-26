@@ -20,6 +20,9 @@ public:
 
 	~ScriptEditor() override;
 
+	/**
+	 * @brief Подключает сигналы виджетов к слотам.
+	 */
 	void ConnectWidgetsSignals();
 
 	/**
