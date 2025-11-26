@@ -2,48 +2,49 @@
 
 Простой редактор Qt Script (.qs) файлов на Qt 5.15 + C++, предназначенный для ручного редактирования скриптов и обмена ими с внешним приложением — Script Runner.
 
-Редактор предоставляет минималистичный UI для просмотра, изменения и сохранения скриптов, а также включает встроенный UDP-сервер, который позволяет приложению-клиенту (например, [Script Runner](https://github.com/sova2022/cpp-script-runner)) удалённо запросить текущий открытый скрипт.
+Редактор предоставляет минималистичный UI для просмотра, изменения и сохранения скриптов, а также включает встроенный UDP-сервер, который позволяет приложению-клиенту (например, [Script Runner](https://github.com/sova2022/ScriptRunner)) удалённо запросить текущий открытый скрипт.
 
 # Зависимости
 
 - **Qt 5.15** (MSVC 2019, 64-bit)  
 - **Visual Studio 2019 Build Tools**  
-- **CMake >= 3.16**  
-- **Git Bash** (для Windows)  
-- (Опционально) **Ninja** для быстрой сборки
 
 # Сборка:
 
 ```bash
-git clone https://github.com/sova2022/cpp-script-editor.git
-cd cpp-script-editor
-mkdir build && cd build
+git clone https://github.com/sova2022/ScriptEditor.git
 ```
 
-Примечание: если CMake не находит Qt, укажите путь к установке Qt5:
-```bash
-export CMAKE_PREFIX_PATH="/c/Qt5/5.15.0/msvc2019_64/lib/cmake" # ваш путь к папке msvc2019_64/lib/cmake
-```
+Открыть проект:
+ScriptEditor.sln в Visual Studio 2019.
 
-```bash
-cmake -G "Visual Studio 16 2019" -A x64 ..
-cmake --build . --config Release # или Debug
-```
+В выпадающих списках выбрать конфигурацию:
+Debug | x64 или Release | x64
+
+Нажать Local Windows Debugger (зелёная кнопка «▶»).
+Приложение запустится непосредственно из среды разработки.
 
 # Запуск:
 
-Если приложение не запускается из-за отсутствия Qt DLL, добавьте в PATH путь к Qt:
-```bash
-export PATH="/c/Qt/5.15.0/msvc2019_64/bin:$PATH" # ваш путь к папке msvc2019_64/bin
+Запуск без Visual Studio (после деплоя)
+
+Чтобы приложение запускалось на любом ПК без установленного Qt и Visual Studio, необходимо выполнить Qt Deployment:
+
+Соберите проект в Release:
+Release | x64
+
+Выполните деплой через windeployqt:
+windeployqt.exe ScriptEditor.exe
+
+пример:
+```cmd
+C:\Qt5\5.15.0\msvc2019_64\bin\windeployqt.exe --release D:\C++\ScriptEditor\x64\Release\ScriptEditor.exe
 ```
 
-Запуск программы
- ```bash
-./Debug/cpp-script-editor.exe   # если собирали Debug
-# или
-./Release/cpp-script-editor.exe # если собирали Release
- ```
+После этого в папку с ScriptEditor.exe будут добавлены все необходимые Qt-библиотеки (Qt5Core.dll, Qt5Widgets.dll, платформенные плагины, styles и т.д.).
 
+# Запуск программы
 
+После деплоя приложение запускается обычным двойным кликом:
 
-
+ScriptEditor.exe
