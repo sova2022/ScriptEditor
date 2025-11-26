@@ -1,0 +1,29 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build folders
+Debug/
+Release/
+x64/
+build/
+out/
+
+# Qt MOC / UI / QRC
+moc_*.cpp
+ui_*.h
+qrc_*.cpp
+*.obj
+*.o
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.log
+
+# CMake (если вдруг есть)
+CMakeFiles/
+CMakeCache.txt

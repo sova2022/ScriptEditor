@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ui.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\udp_file_server.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\script_editor.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="src\ui.h">
+      <Filter>src</Filter>
+    </QtMoc>
+    <QtMoc Include="src\udp_file_server.h">
+      <Filter>src</Filter>
+    </QtMoc>
+    <QtMoc Include="src\script_editor.h">
+      <Filter>src</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d04a84d1-f126-4ea3-83db-3efd2f86e85a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resourses">
+      <UniqueIdentifier>{fe207e02-311c-4a9b-b8bc-802d1854dca5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts\example.qs">
+      <Filter>resourses</Filter>
+    </None>
+    <None Include="..\.gitignore" />
+    <None Include="..\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="img\icon.ico">
+      <Filter>resourses</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="resources\resources.qrc">
+      <Filter>resourses</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="resources\resources.rc">
+      <Filter>resourses</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

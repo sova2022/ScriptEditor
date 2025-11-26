@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.36602.28
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ScriptEditor", "ScriptEditor\ScriptEditor.vcxproj", "{907EA9ED-D164-47E9-B8B4-58D2E1C001ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{907EA9ED-D164-47E9-B8B4-58D2E1C001ED}.Debug|x64.ActiveCfg = Debug|x64
+		{907EA9ED-D164-47E9-B8B4-58D2E1C001ED}.Debug|x64.Build.0 = Debug|x64
+		{907EA9ED-D164-47E9-B8B4-58D2E1C001ED}.Release|x64.ActiveCfg = Release|x64
+		{907EA9ED-D164-47E9-B8B4-58D2E1C001ED}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {03F7A314-4C3C-469B-BECB-F20C92873DBB}
+	EndGlobalSection
+EndGlobal
