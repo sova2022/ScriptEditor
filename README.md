@@ -17,7 +17,7 @@
 git clone https://github.com/sova2022/ScriptEditor.git
 ```
 
-Или скачать из раздела [Releases](https://github.com/sova2022/ScriptEditor/releases) архив с исходным кодом [Source code(zip)](https://github.com/sova2022/ScriptEditor/archive/refs/tags/v1.0.0.zip)
+Или скачать из раздела [Releases](https://github.com/sova2022/ScriptEditor/releases) архив с исходным кодом [Source code(zip)](https://github.com/sova2022/ScriptEditor/archive/refs/tags/v.1.0.0_update.zip)
 
 Открыть файл проектa ScriptEditor.sln в Visual Studio 2019.
 
@@ -54,6 +54,6 @@ C:\Qt5\5.15.0\msvc2019_64\bin\windeployqt.exe --release D:\C++\ScriptEditor\x64\
 ScriptEditor.exe
 
 Также в разделе [Releases](https://github.com/sova2022/ScriptEditor/releases) доступна готовая задеплоенная сборка.<br>
-Готовый архив можно скачать здесь: [release-v1.0.0.zip](https://github.com/sova2022/ScriptEditor/releases/download/v1.0.0/release-v1.0.0.zip)
+Готовый архив можно скачать здесь: [release-v1.0.0.zip](https://github.com/sova2022/ScriptEditor/releases/download/v.1.0.0_update/release-v1.0.0.zip)
 
 
